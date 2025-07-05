@@ -6,7 +6,8 @@ set(SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 file(GLOB_RECURSE SOURCE_FILES "${SOURCE}/*.cpp")
 file(GLOB_RECURSE HEADER_FILES "${SOURCE}/*.hpp")
-add_executable(ostaris ${SOURCE_FILES} ${HEADER_FILES})
+add_executable(ostaris ${SOURCE_FILES} ${HEADER_FILES}
+        src/sample.c)
 
 include_directories("D:/Program Files (x86)/mingw64/include")
 link_directories("D:/Program Files (x86)/mingw64/lib")
